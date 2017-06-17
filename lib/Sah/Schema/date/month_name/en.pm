@@ -1,4 +1,4 @@
-package Sah::Schema::date::month::en;
+package Sah::Schema::date::month_name::en;
 
 # DATE
 # VERSION

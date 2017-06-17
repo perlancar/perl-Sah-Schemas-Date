@@ -1,4 +1,4 @@
-package Sah::Schema::date::min;
+package Sah::Schema::date::minute;
 
 # DATE
 # VERSION
