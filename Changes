@@ -1,5 +1,11 @@
 0.002   2019-06-20 (PERLANCAR)
 
+	- [bugfix] Derp, for coerce rule from day-of-week name to number,
+	  Monday=1 not Sunday=1 since we're following DateTime's definition.
+
+
+0.002   2019-06-20 (PERLANCAR)
+
         - Add coerce rule for date::month_num: str_convert_en_month_name_to_num
           (from English month name).
 
