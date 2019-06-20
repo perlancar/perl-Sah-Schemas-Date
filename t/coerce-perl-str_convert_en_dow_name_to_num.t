@@ -16,9 +16,9 @@ subtest "basics" => sub {
         is_deeply($c->("foo"), "foo", "uncoerced");
     };
     subtest "coerced" => sub {
-        is($c->("su"), 1);
-        is($c->("MON"), 2);
-        is($c->("Saturday"), 7);
+        is($c->("su"), 7);
+        is($c->("MON"), 1);
+        is($c->("Saturday"), 6);
     };
 };
 

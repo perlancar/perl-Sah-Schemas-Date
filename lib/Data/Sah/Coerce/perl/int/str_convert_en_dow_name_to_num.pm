@@ -30,13 +30,13 @@ sub coerce {
         # since this is a small translation table we put it inline, but for
         # larger translation table we should move it to a separate perl module
         "\$$pkg\::dow_nums ||= {",
-        "  su=>1, sun=>1, sunday=>1, ",
-        "  mo=>2, mon=>2, monday=>2, ",
-        "  tu=>3, tue=>3, tuesday=>3, ",
-        "  we=>4, wed=>4, wednesday=>4, ",
-        "  th=>5, thu=>5, thursday=>5, ",
-        "  fr=>6, fri=>6, friday=>6, ",
-        "  sa=>7, sat=>7, saturday=>7, ",
+        "  mo=>1, mon=>1, monday=>1, ",
+        "  tu=>2, tue=>2, tuesday=>2, ",
+        "  we=>3, wed=>3, wednesday=>3, ",
+        "  th=>4, thu=>4, thursday=>4, ",
+        "  fr=>5, fri=>5, friday=>5, ",
+        "  sa=>6, sat=>6, saturday=>6, ",
+        "  su=>7, sun=>7, sunday=>7, ",
         "}; ",
         "\$$pkg\::dow_nums->{lc $dt} || $dt; ",
         "}",
@@ -46,7 +46,7 @@ sub coerce {
 }
 
 1;
-# ABSTRACT: Convert English day-of-week name (e.g. su, MON, Tuesday) to number (1-7, 1=Sunday)
+# ABSTRACT: Convert English day-of-week name (e.g. su, MON, Tuesday) to number (1-7, 1=Monday)
 
 =for Pod::Coverage ^(meta|coerce)$
 
@@ -58,5 +58,5 @@ This rule can convert English day-of-week names like:
  MON
  Tuesday
 
-to corresponding day-of-week numbers (i.e. 1, 2, 3 in the examples above).
+to corresponding day-of-week numbers (i.e. 7, 1, 2 in the examples above).
 Unrecognized strings will just be passed as-is.
