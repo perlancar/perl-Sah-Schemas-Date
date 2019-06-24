@@ -8,6 +8,7 @@ our $schema = [int => {
     min => 1,
     max => 7,
     'x.perl.coerce_rules' => ['str_convert_en_dow_name_to_num'],
+    'x.completion' => ['date_dow_num'],
 }, {}];
 
 1;
