@@ -23,7 +23,6 @@ sub gen_completion {
         complete_comma_sep(
             elems => [
                 1..12,
-                "jan","feb","mar","apr","may","jun","jul","aug","sep","oct","nov","dec",
                 "january","february","march","april","may","june","july","august","september","october","november","december",
             ],
             word => $cargs{word},

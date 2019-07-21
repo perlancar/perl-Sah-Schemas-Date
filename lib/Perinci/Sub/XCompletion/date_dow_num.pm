@@ -23,8 +23,6 @@ sub gen_completion {
         complete_array_elem(
             array => [
                 1..7,
-                "mo","tu","we","th","fr","sa","su",
-                "mon","tue","wed","thu","fri","sat","sun",
                 "monday","tuesday","wednesday","thursday","friday","saturday","sunday",
             ],
             word => $cargs{word},
