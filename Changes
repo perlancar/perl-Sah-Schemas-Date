@@ -1,3 +1,11 @@
+0.006   2019-07-21  Released-By: PERLANCAR; Urgency: low
+
+	- [ux] Tweak completion for dow_num/month_num: remove abbreviated
+	  entries to ease completion.
+
+	- [dist] Edit urgency of v0.005.
+
+
 0.005   2019-07-21  Released-By: PERLANCAR; Urgency: low
 
 	- Add x.completion to date::month_num{,s}.
