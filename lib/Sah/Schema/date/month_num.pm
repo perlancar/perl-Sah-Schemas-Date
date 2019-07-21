@@ -8,6 +8,7 @@ our $schema = [int => {
     min => 1,
     max => 12,
     'x.perl.coerce_rules' => ['str_convert_en_month_name_to_num'],
+    'x.completion' => ['date_month_num'],
 }, {}];
 
 1;
