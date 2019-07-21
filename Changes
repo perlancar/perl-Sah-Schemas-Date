@@ -1,4 +1,4 @@
-0.005   2019-07-21  Released-By: PERLANCAR; Urgency: medium
+0.005   2019-07-21  Released-By: PERLANCAR; Urgency: low
 
 	- Add x.completion to date::month_num{,s}.
 
