@@ -1,6 +1,8 @@
-package Data::Sah::Coerce::perl::int::str_convert_en_dow_name_to_num;
+package Data::Sah::Coerce::perl::To_int::From_str::convert_en_dow_name_to_num;
 
+# AUTHOR
 # DATE
+# DIST
 # VERSION
 
 use 5.010001;
@@ -10,6 +12,7 @@ use warnings;
 sub meta {
     +{
         v => 4,
+        summary => 'Convert English day-of-week name (e.g. su, MON, Tuesday) to number (1-7, 1=Monday)',
         prio => 50,
     };
 }
@@ -46,7 +49,7 @@ sub coerce {
 }
 
 1;
-# ABSTRACT: Convert English day-of-week name (e.g. su, MON, Tuesday) to number (1-7, 1=Monday)
+# ABSTRACT:
 
 =for Pod::Coverage ^(meta|coerce)$
 

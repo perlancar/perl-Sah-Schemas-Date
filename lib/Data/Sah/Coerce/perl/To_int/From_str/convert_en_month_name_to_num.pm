@@ -1,6 +1,8 @@
-package Data::Sah::Coerce::perl::int::str_convert_en_month_name_to_num;
+package Data::Sah::Coerce::perl::To_int::From_str::convert_en_month_name_to_num;
 
+# AUTHOR
 # DATE
+# DIST
 # VERSION
 
 use 5.010001;
@@ -10,6 +12,7 @@ use warnings;
 sub meta {
     +{
         v => 4,
+        summary => 'Convert English month name (e.g. Dec, april) to number (1-12)',
         prio => 50,
     };
 }
@@ -51,7 +54,7 @@ sub coerce {
 }
 
 1;
-# ABSTRACT: Convert English month name (e.g. Dec, april) to number (1-12)
+# ABSTRACT:
 
 =for Pod::Coverage ^(meta|coerce)$
 
