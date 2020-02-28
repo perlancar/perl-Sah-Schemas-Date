@@ -7,7 +7,7 @@ package Sah::Schema::date::tz_name;
 
 our $schema = [str => {
     summary => 'Timezone name',
-    completion => sub {
+    'x.completion' => sub {
         require Complete::TZ;
 
         my %args = @_;
