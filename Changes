@@ -1,3 +1,9 @@
+0.009   2020-02-28  Released-By: PERLANCAR; Urgency: medium
+
+	- [bugfix][date::tz_name] Fix property name (completion ->
+	  x.completion).
+
+
 0.008   2020-02-27  Released-By: PERLANCAR; Urgency: medium
 
 	- Add schemas: date::tz_name, date::tz_offset, date::tz_offset_lax.
