@@ -1,5 +1,10 @@
 package Sah::Schemas::Date;
 
+# AUTHORITY
+# DATE
+# DIST
+# VERSION
+
 1;
 # ABSTRACT: Sah schemas related to date
 

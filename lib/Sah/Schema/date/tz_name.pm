@@ -14,6 +14,9 @@ our $schema = [str => {
 
         Complete::TZ::complete_tz(word => $args{word});
     },
+    examples => [
+        {data=>'Asia/Jakarta', valid=>1},
+    ],
 }, {}];
 
 1;

@@ -58,6 +58,20 @@ _
             Complete::TZ::complete_tz_name(word => $args{word}),
         );
     },
+    examples => [
+        {data=>'', valid=>0},
+        {data=>'UTC', valid=>1, res=>0},
+        {data=>'3600', valid=>1, res=>3600},
+        {data=>'-43200', valid=>1, res=>-43200},
+        {data=>'-12', valid=>1, res=>-12*3600},
+        {data=>'-1200', valid=>1, res=>-12*3600},
+        {data=>'-12:00', valid=>1, res=>-12*3600},
+        {data=>'UTC-12', valid=>1, res=>-12*3600},
+        {data=>'UTC-1200', valid=>1, res=>-12*3600},
+        {data=>'UTC+12:45', valid=>1, res=>+12.75*3600},
+        {data=>'UTC-13', valid=>0},
+        {data=>'UTC+12:01', valid=>0, summary=>'Unknown offset'},
+    ],
 }, {}];
 
 1;
