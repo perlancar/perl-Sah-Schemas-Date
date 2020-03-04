@@ -28,17 +28,17 @@ A coercion from timezone name is also provided.
 _
     examples => [
         {value=>'', valid=>0},
-        {value=>'UTC', valid=>1, res=>0},
-        {value=>'3600', valid=>1, res=>3600},
-        {value=>'-43200', valid=>1, res=>-43200},
-        {value=>'-12', valid=>1, res=>-12*3600},
-        {value=>'-1200', valid=>1, res=>-12*3600},
-        {value=>'-12:00', valid=>1, res=>-12*3600},
-        {value=>'UTC-12', valid=>1, res=>-12*3600},
-        {value=>'UTC-1200', valid=>1, res=>-12*3600},
-        {value=>'UTC+12:45', valid=>1, res=>+12.75*3600},
+        {value=>'UTC', valid=>1, validated_value=>0},
+        {value=>'3600', valid=>1, validated_value=>3600},
+        {value=>'-43200', valid=>1, validated_value=>-43200},
+        {value=>'-12', valid=>1, validated_value=>-12*3600},
+        {value=>'-1200', valid=>1, validated_value=>-12*3600},
+        {value=>'-12:00', valid=>1, validated_value=>-12*3600},
+        {value=>'UTC-12', valid=>1, validated_value=>-12*3600},
+        {value=>'UTC-1200', valid=>1, validated_value=>-12*3600},
+        {value=>'UTC+12:45', valid=>1, validated_value=>+12.75*3600},
         {value=>'UTC-13', valid=>0},
-        {value=>'UTC+12:01', valid=>1, res=>+(12*3600+60)},
+        {value=>'UTC+12:01', valid=>1, validated_value=>+(12*3600+60)},
     ],
 }, {}];
 
