@@ -13,13 +13,13 @@ our $schema = [cistr => {
         qw/january february march april june july august september october november december/,
     ],
     examples => [
-        {data=>'', valid=>0},
-        {data=>1, valid=>1},
-        {data=>'jan', valid=>1},
-        {data=>'FeB', valid=>1},
-        {data=>'March', valid=>1},
-        {data=>'foo', valid=>0},
-        {data=>13, valid=>0},
+        {value=>'', valid=>0},
+        {value=>1, valid=>1},
+        {value=>'jan', valid=>1},
+        {value=>'FeB', valid=>1},
+        {value=>'March', valid=>1},
+        {value=>'foo', valid=>0},
+        {value=>13, valid=>0},
     ],
 }, {}];
 

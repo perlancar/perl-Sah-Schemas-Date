@@ -11,13 +11,13 @@ our $schema = ['array' => {
     'x.perl.coerce_rules' => ['From_str::comma_sep'],
     'x.completion' => ['date_dow_nums'],
     examples => [
-        {data=>'', valid=>1},
-        {data=>1, valid=>1},
-        {data=>[1], valid=>1},
-        {data=>[1,7], valid=>1},
-        {data=>'1,7', valid=>1},
-        {data=>[1,7,8], valid=>0},
-        {data=>'1,7,8', valid=>0},
+        {value=>'', valid=>1},
+        {value=>1, valid=>1},
+        {value=>[1], valid=>1},
+        {value=>[1,7], valid=>1},
+        {value=>'1,7', valid=>1},
+        {value=>[1,7,8], valid=>0},
+        {value=>'1,7,8', valid=>0},
     ],
 }, {}];
 

@@ -11,14 +11,14 @@ our $schema = ['array' => {
     'x.perl.coerce_rules' => ['From_str::comma_sep'],
     'x.completion' => ['date_month_num'],
     examples => [
-        {data=>'', valid=>1},
-        {data=>0, valid=>0},
-        {data=>1, valid=>1},
-        {data=>[1], valid=>1},
-        {data=>[1,12], valid=>1},
-        {data=>'1,12', valid=>1},
-        {data=>[1,12,13], valid=>0},
-        {data=>'1,12,13', valid=>0},
+        {value=>'', valid=>1},
+        {value=>0, valid=>0},
+        {value=>1, valid=>1},
+        {value=>[1], valid=>1},
+        {value=>[1,12], valid=>1},
+        {value=>'1,12', valid=>1},
+        {value=>[1,12,13], valid=>0},
+        {value=>'1,12,13', valid=>0},
     ],
 }, {}];
 

@@ -8,10 +8,10 @@ package Sah::Schema::date::year;
 our $schema = [int => {
     summary => 'Year number',
     examples => [
-        {data=>'', valid=>0},
-        {data=>1, valid=>1},
-        {data=>2020, valid=>1},
-        {data=>1.1, valid=>0},
+        {value=>'', valid=>0},
+        {value=>1, valid=>1},
+        {value=>2020, valid=>1},
+        {value=>1.1, valid=>0},
     ],
 }, {}];
 

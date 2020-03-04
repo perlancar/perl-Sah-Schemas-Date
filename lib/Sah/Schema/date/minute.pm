@@ -10,10 +10,10 @@ our $schema = [int => {
     min     => 0,
     max     => 59,
     examples => [
-        {data=>'', valid=>0},
-        {data=>0, valid=>1},
-        {data=>59, valid=>1},
-        {data=>60, valid=>0},
+        {value=>'', valid=>0},
+        {value=>0, valid=>1},
+        {value=>59, valid=>1},
+        {value=>60, valid=>0},
     ],
 }, {}];
 

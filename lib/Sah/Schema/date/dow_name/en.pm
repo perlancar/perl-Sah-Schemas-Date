@@ -13,11 +13,11 @@ our $schema = [cistr => {
         qw/sunday monday tuesday wednesday thursday friday saturday/,
     ],
     examples => [
-        {data=>'', valid=>0},
-        {data=>'su', valid=>1},
-        {data=>'mOn', valid=>1},
-        {data=>'TUESDAY', valid=>1},
-        {data=>'foo', valid=>0},
+        {value=>'', valid=>0},
+        {value=>'su', valid=>1},
+        {value=>'mOn', valid=>1},
+        {value=>'TUESDAY', valid=>1},
+        {value=>'foo', valid=>0},
     ],
 }, {}];
 

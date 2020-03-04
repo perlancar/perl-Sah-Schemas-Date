@@ -12,11 +12,11 @@ our $schema = [int => {
     'x.perl.coerce_rules' => ['From_str::convert_en_dow_name_to_num'],
     'x.completion' => ['date_dow_num'],
     examples => [
-        {data=>'', valid=>0},
-        {data=>0, valid=>0},
-        {data=>1, valid=>1},
-        {data=>7, valid=>1},
-        {data=>8, valid=>0},
+        {value=>'', valid=>0},
+        {value=>0, valid=>0},
+        {value=>1, valid=>1},
+        {value=>7, valid=>1},
+        {value=>8, valid=>0},
     ],
 }, {}];
 
