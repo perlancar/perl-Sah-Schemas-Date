@@ -1,6 +1,8 @@
 package Perinci::Sub::XCompletion::date_month_num;
 
+# AUTHORITY
 # DATE
+# DIST
 # VERSION
 
 use 5.010001;

@@ -40,7 +40,7 @@ _
         {value=>'UTC-13', valid=>0},
         {value=>'UTC+12:01', valid=>1, validated_value=>+(12*3600+60)},
     ],
-}, {}];
+}];
 
 1;
 

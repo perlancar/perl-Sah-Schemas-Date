@@ -72,7 +72,7 @@ _
         {value=>'UTC-13', valid=>0},
         {value=>'UTC+12:01', valid=>0, summary=>'Unknown offset'},
     ],
-}, {}];
+}];
 
 1;
 
