@@ -1,3 +1,13 @@
+0.017   2021-08-04  Released-By: PERLANCAR; Urgency: low
+
+	- No functional changes.
+
+        - [build] Rebuild with updated Pod::Weaver::Plugin::Sah::Schemas (0.069)
+          to tweak Synopsis POD section.
+
+	- Tweak examples.
+
+
 0.016   2021-08-04  Released-By: PERLANCAR; Urgency: low
 
         - No functional changes.
