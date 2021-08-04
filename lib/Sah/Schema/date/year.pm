@@ -6,14 +6,17 @@ package Sah::Schema::date::year;
 # VERSION
 
 our $schema = [int => {
-    summary => 'Year number',
+    min => 1,
+    summary => 'Year number (AD, starting from 1)',
     examples => [
-        {value=>'', valid=>0},
+        {value=>'', valid=>0, summary=>'Empty string'},
+        {value=>0, valid=>0, summary=>'There is no AD 0; AD starts from 1'},
         {value=>1, valid=>1},
-        {value=>2020, valid=>1},
-        {value=>1.1, valid=>0},
+        {value=>2021, valid=>1},
+        {value=>10000, valid=>1},
+       {value=>1.1, valid=>0, summary=>'Not an integer'},
     ],
-}, {}];
+}];
 
 1;
 
