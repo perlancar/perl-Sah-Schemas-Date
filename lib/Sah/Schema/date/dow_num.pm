@@ -19,10 +19,11 @@ See also related schemas that coerce from other locales, e.g.
 
 _
     examples => [
-        {value=>'', valid=>0, summary=>"Not in 1-7"},
+        {value=>'', valid=>0, summary=>"Empty string"},
         {value=>0, valid=>0, summary=>"Not in 1-7"},
         {value=>1, valid=>1},
         {value=>"Tue", validated_value=>2, valid=>1},
+        {value=>"foo", valid=>0, summary=>'Not a known English day-of-week name'},
         {value=>7, valid=>1},
         {value=>8, valid=>0, summary=>"Not in 1-7"},
     ],
