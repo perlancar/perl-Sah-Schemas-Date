@@ -1,12 +1,14 @@
 package Sah::Schema::date::month_num;
 
+use strict;
+
 # AUTHORITY
 # DATE
 # DIST
 # VERSION
 
 our $schema = [int => {
-    summary => 'Month number, coercible from English month names (Dec/DECEMBER)',
+    summary => 'Month number, coercible from English month names (Dec/DECEMBER), e.g. 2 or "Feb"',
     min => 1,
     max => 12,
     'x.perl.coerce_rules' => ['From_str::convert_en_month_name_to_num'],

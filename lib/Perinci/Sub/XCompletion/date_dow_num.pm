@@ -1,15 +1,15 @@
 package Perinci::Sub::XCompletion::date_dow_num;
 
-# AUTHORITY
-# DATE
-# DIST
-# VERSION
-
 use 5.010001;
 use strict;
 use warnings;
 
 use Complete::Util qw(complete_array_elem);
+
+# AUTHORITY
+# DATE
+# DIST
+# VERSION
 
 our %SPEC;
 

@@ -1,12 +1,14 @@
 package Sah::Schema::date::minute;
 
+use strict;
+
 # AUTHORITY
 # DATE
 # DIST
 # VERSION
 
 our $schema = [int => {
-    summary => 'Minute of hour (0-59)',
+    summary => 'Minute of hour (0-59), e.g. 30',
     min     => 0,
     max     => 59,
     examples => [

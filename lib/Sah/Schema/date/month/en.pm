@@ -1,12 +1,14 @@
 package Sah::Schema::date::month::en;
 
+use strict;
+
 # AUTHORITY
 # DATE
 # DIST
 # VERSION
 
 our $schema = [cistr => {
-    summary => 'Month number/name (abbreviated or full, in English)',
+    summary => 'Month number/name (abbreviated or full, in English), e.g. 1 or "jan" or "September"',
     in => [
         1..12,
         qw/jan feb mar apr may jun jul aug sep oct nov dec/,

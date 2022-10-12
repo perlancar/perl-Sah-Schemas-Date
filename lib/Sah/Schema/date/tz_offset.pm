@@ -1,14 +1,19 @@
 package Sah::Schema::date::tz_offset;
 
+use strict;
+
 # AUTHORITY
 # DATE
 # DIST
 # VERSION
 
+our @TZ_STRING_OFFSETS;
+our @TZ_INT_OFFSETS;
+
 BEGIN {
 
     # taken from Wikipedia page: https://en.wikipedia.org/wiki/UTC%2B14:00 on Feb 27, 2020
-our @TZ_STRING_OFFSETS = qw(
+    @TZ_STRING_OFFSETS = qw(
     -12:00 -11:00 -10:30 -10:00 -09:30 -09:00 -08:30 -08:00 -07:00
     -06:00 -05:00 -04:30 -04:00 -03:30 -03:00 -02:30 -02:00 -01:00 -00:44 -00:25:21
     -00:00 +00:00 +00:20 +00:30 +01:00 +01:24 +01:30 +02:00 +02:30 +03:00 +03:30 +04:00 +04:30 +04:51 +05:00 +05:30 +05:40 +05:45
@@ -16,7 +21,6 @@ our @TZ_STRING_OFFSETS = qw(
     +12:00 +12:45 +13:00 +13:45 +14:00
 );
 
-our @TZ_INT_OFFSETS;
 for (@TZ_STRING_OFFSETS) {
     /^([+-])(\d\d):(\d\d)(?::(\d\d))?$/
         or die "Unrecognized tz offset string: $_";
@@ -28,7 +32,7 @@ for (@TZ_STRING_OFFSETS) {
 } # BEGIN
 
 our $schema = [int => {
-    summary => 'Timezone offset in seconds from UTC',
+    summary => 'Timezone offset in seconds from UTC (only known offsets are allowd, coercible from string), e.g. 25200 or "+07:00"',
     in => \@TZ_INT_OFFSETS,
     description => <<'_',
 

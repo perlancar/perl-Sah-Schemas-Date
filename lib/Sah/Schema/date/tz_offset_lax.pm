@@ -1,12 +1,14 @@
 package Sah::Schema::date::tz_offset_lax;
 
+use strict;
+
 # AUTHORITY
 # DATE
 # DIST
 # VERSION
 
 our $schema = ['date::tz_offset' => {
-    summary => 'Timezone offset in seconds from UTC',
+    summary => 'Timezone offset in seconds from UTC (any offset is allowed, coercible from string), e.g. 1 or 25200 e.g. UTC+7',
     'merge.delete.in' => [],
     min => -12*3600,
     max => +14*3600,

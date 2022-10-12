@@ -1,12 +1,14 @@
 package Sah::Schema::date::tz_name;
 
+use strict;
+
 # AUTHORITY
 # DATE
 # DIST
 # VERSION
 
 our $schema = [str => {
-    summary => 'Timezone name, e.g. Asia/Jakarta',
+    summary => 'Timezone name (validity not checked), e.g. Asia/Jakarta',
     description => <<'_',
 
 Currently no validation for valid timezone names. But completion is provided.

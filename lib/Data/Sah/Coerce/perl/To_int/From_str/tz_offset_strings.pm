@@ -1,13 +1,13 @@
 package Data::Sah::Coerce::perl::To_int::From_str::tz_offset_strings;
 
-# AUTHOR
-# DATE
-# DIST
-# VERSION
-
 use 5.010001;
 use strict;
 use warnings;
+
+# AUTHORITY
+# DATE
+# DIST
+# VERSION
 
 sub meta {
     +{

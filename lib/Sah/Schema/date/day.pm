@@ -1,12 +1,14 @@
 package Sah::Schema::date::day;
 
+use strict;
+
 # AUTHORITY
 # DATE
 # DIST
 # VERSION
 
 our $schema = [int => {
-    summary => 'Day of month (1-31)',
+    summary => 'Day of month (1-31), e.g. 17',
     min     => 1,
     max     => 31,
     examples => [

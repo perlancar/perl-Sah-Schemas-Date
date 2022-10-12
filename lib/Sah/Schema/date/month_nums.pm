@@ -1,12 +1,14 @@
 package Sah::Schema::date::month_nums;
 
+use strict;
+
 # AUTHORITY
 # DATE
 # DIST
 # VERSION
 
 our $schema = ['array' => {
-    summary => 'Array of required month numbers (1-12, with coercions)',
+    summary => 'Array of required month numbers (1-12, with coercions), e.g. [6,12]',
     of => ['date::month_num', {req=>1}],
     'x.perl.coerce_rules' => ['From_str::comma_sep'],
     'x.completion' => ['date_month_num'],

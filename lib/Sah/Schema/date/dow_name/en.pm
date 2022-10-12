@@ -1,12 +1,14 @@
 package Sah::Schema::date::dow_name::en;
 
+use strict;
+
 # AUTHORITY
 # DATE
 # DIST
 # VERSION
 
 our $schema = [cistr => {
-    summary => 'Day-of-week name (abbreviated or full, in English)',
+    summary => 'Day-of-week name (abbreviated or full, in English), e.g. "su" or "Monday"',
     in => [
         qw/su mo tu we th fr sa/,
         qw/sun mon tue wed thu fri sat/,

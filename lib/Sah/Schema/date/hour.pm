@@ -1,12 +1,14 @@
 package Sah::Schema::date::hour;
 
+use strict;
+
 # AUTHORITY
 # DATE
 # DIST
 # VERSION
 
 our $schema = [int => {
-    summary => 'Hour of day (0-23)',
+    summary => 'Hour of day (0-23), e.g. 12',
     min     => 0,
     max     => 23,
     examples => [

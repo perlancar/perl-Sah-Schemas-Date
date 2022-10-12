@@ -1,13 +1,13 @@
 package Data::Sah::Coerce::perl::To_int::From_str::convert_en_dow_name_to_num;
 
-# AUTHOR
-# DATE
-# DIST
-# VERSION
-
 use 5.010001;
 use strict;
 use warnings;
+
+# AUTHORITY
+# DATE
+# DIST
+# VERSION
 
 sub meta {
     +{

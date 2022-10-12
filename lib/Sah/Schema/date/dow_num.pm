@@ -1,12 +1,14 @@
 package Sah::Schema::date::dow_num;
 
+use strict;
+
 # AUTHORITY
 # DATE
 # DIST
 # VERSION
 
 our $schema = [int => {
-    summary => 'Day-of-week number (1-7, 1=Monday, like DateTime), coercible from English day-of-week name (Mo/mon/MONDAY)',
+    summary => 'Day-of-week number (1-7, 1=Monday, like DateTime), coercible from English day-of-week name (Mo/mon/MONDAY), e.g. 1 or "Mon"',
     min => 1,
     max => 7,
     'x.perl.coerce_rules' => ['From_str::convert_en_dow_name_to_num'],

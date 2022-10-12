@@ -1,12 +1,14 @@
 package Sah::Schema::date::dow_nums;
 
+use strict;
+
 # AUTHORITY
 # DATE
 # DIST
 # VERSION
 
 our $schema = ['array' => {
-    summary => 'Array of required date::dow_num (day-of-week, 1-7, 1=Monday, like DateTime, with coercions)',
+    summary => 'Array of required date::dow_num (day-of-week, 1-7, 1=Monday, like DateTime, with coercions), e.g. [1,3,5]',
     of => ['date::dow_num', {req=>1}],
     'x.perl.coerce_rules' => ['From_str::comma_sep'],
     'x.completion' => ['date_dow_nums'],
