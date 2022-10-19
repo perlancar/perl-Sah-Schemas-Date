@@ -8,7 +8,7 @@ use strict;
 # VERSION
 
 our $schema = ['date::tz_offset' => {
-    summary => 'Timezone offset in seconds from UTC (any offset is allowed, coercible from string), e.g. 1 or 25200 e.g. UTC+7',
+    summary => 'Timezone offset in seconds from UTC (any offset is allowed, coercible from string), e.g. 1 or 25200 e.g. "UTC+7"',
     'merge.delete.in' => [],
     min => -12*3600,
     max => +14*3600,

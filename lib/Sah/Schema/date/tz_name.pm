@@ -8,7 +8,7 @@ use strict;
 # VERSION
 
 our $schema = [str => {
-    summary => 'Timezone name (validity not checked), e.g. Asia/Jakarta',
+    summary => 'Timezone name (validity not checked), e.g. "Asia/Jakarta"',
     description => <<'_',
 
 Currently no validation for valid timezone names. But completion is provided.
